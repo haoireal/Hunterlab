@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+.carousel-item {
+transition: transform 0.6s ease-in-out;
+}
+.imgCarousel {
+    padding: 60px 0;
+}
+
+.trusted-img {
+    padding: 20px;
+    width: auto !important;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+#ProductCategoryCarousel{
+    margin-top: 5vw;
+}
+.product-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s ease;
+    background: #fff;
+    padding: auto;
+    height: 25vw;
+    border-radius: 10px;
+}
+
+
+.product-card-inner {
+    position: relative;
+    transition: opacity 0.3s ease;
+    height: 100%;
+}
+
+.product-card-title {
+    font-size: 1.4vw;
+    margin-bottom: 0.5rem;
+}
+
+.product-card-object img {
+    width: auto;
+    height: 8vw;
+    transition: opacity 0.3s ease;
+}
+
+.product-card-data {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card-action {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.product-card:hover .product-card-data {
+    display: block;
+    opacity: 1;
+}
+
+.product-card:hover .product-card-object img {
+    opacity: 0.3; /* Làm mờ hình ảnh khi hover */
+}
+
+.product-card:hover .product-card-inner,
+.product-card:hover .product-card{
+    background: #428bc5; /* Màu nền xanh dương hiện lên */
+    color:white !important;
+
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 20px 8px #b6b6b6;
+}
+/* Tùy chỉnh CSS cho phần banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-cover {
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Có thể điều chỉnh chiều cao theo yêu cầu */
+    position: relative;
+}
+
+.img-cover img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff; /* Màu chữ */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff; /* Màu chữ tiêu đề */
+}
+
+.banner-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff; /* Màu chữ tiêu đề chính */
+    margin-bottom: 1rem;
+}
+
+.banner-desc {
+    margin-bottom: 1.5rem;
+}
+
+.banner-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .img-cover {
+        height: 200px; /* Điều chỉnh chiều cao cho thiết bị di động */
+    }
+}
+
+.whatsnew {
+    padding: 60px 0;
+}
+
+.whatsnew .post-info-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.whatsnew .post-info-desc {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+.wn-caption-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box-image img {
+    width: auto;
+    height: 15vw;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.box-image:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.box-image .overlay {
+    opacity: 1;
+}
+
+.entry-header {
+    position: relative;
+}
+
+.entry-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.entry-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.entry-title a{
+    color: #ddd;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+.footer {
+    background-color: #00153a;
+    color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+}
+
+.footer-heading img {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-phone a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.footer-address {
+    margin: 20px 0;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social .social-icon {
+    color: #f5f5f5;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-social .social-icon:hover {
+    color: #007bff;
+}
+
+.footer-links-heading {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 10px;
+}
+
+.footer-links-list a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.footer-links-list a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 14px;
+}
