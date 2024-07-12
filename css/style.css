@@ -131,7 +131,7 @@ transition: transform 0.6s ease-in-out;
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff; /* Màu chữ */
+    color: #000000; /* Màu chữ */
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -142,13 +142,13 @@ transition: transform 0.6s ease-in-out;
 .banner-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #fff; /* Màu chữ tiêu đề */
+    color: #000000; /* Màu chữ tiêu đề */
 }
 
 .banner-header {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff; /* Màu chữ tiêu đề chính */
+    color: #000000; /* Màu chữ tiêu đề chính */
     margin-bottom: 1rem;
 }
 
